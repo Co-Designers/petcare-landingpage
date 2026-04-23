@@ -30,6 +30,22 @@ nav ul li a {
   font-size: 1.1rem !important; 
 }
 
+.btn-flat.white-text {
+  border: 1px solid var(--blanco);
+  line-height: 36px; /* Ajuste para que el borde no se vea raro */
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 0 15px;
+  text-transform: none;
+}
+
+.secondary-bg {
+  background-color: var(--verde-petcare) !important; /* Usando tu variable cian/azul */
+  border-radius: 8px !important;
+  text-transform: none;
+  font-weight: bold;
+}
+
 .hero {
   position: relative;
   width: 100%;

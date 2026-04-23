@@ -1,5 +1,8 @@
 const translations = {
   es: {
+
+    "nav.login": "Iniciar Sesión",
+    "nav.register": "Registrarse",
     "head.title": "Petcare - Cuidado inteligente para su bienestar real",
     "nav.home": "Inicio",
     "nav.about": "Quiénes somos",
@@ -47,6 +50,8 @@ const translations = {
     "footer.text": "© PetCare 2026. Todos los derechos reservados."
   },
   en: {
+    "nav.login": "Log In",
+    "nav.register": "Sign Up",
     "head.title": "Petcare - Intelligent care for real wellbeing",
     "nav.home": "Home",
     "nav.about": "About Us",
