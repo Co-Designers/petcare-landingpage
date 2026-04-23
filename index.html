@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Petcare - Cuidado inteligente para su bienestar real</title>
+  <title data-i18n="head.title">Petcare - Cuidado inteligente para su bienestar real</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,17 +11,20 @@
 </head>
 <body>
 
+
   <nav>
     <div class="nav-wrapper container">
       <a href="#home" class="brand-logo left">
         <img src="./images/logo.png" height="40px" alt="Petcare logo" style="margin-top:15px;">
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Quiénes somos</a></li>
-        <li><a href="#benefits">Beneficios</a></li>
-        <li><a href="#subscription">Suscripción</a></li>
-        <li><a href="#contact-me">Contacto</a></li>
+        <li><a href="#home" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#about" data-i18n="nav.about">Quiénes somos</a></li>
+        <li><a href="#benefits" data-i18n="nav.benefits">Beneficios</a></li>
+        <li><a href="#subscription" data-i18n="nav.subscription">Suscripción</a></li>
+        <li><a href="#contact-me" data-i18n="nav.contact">Contacto</a></li>
+        <li><a onclick="changeLanguage('es')">ES</a></li>
+        <li><a onclick="changeLanguage('en')">EN</a></li>
       </ul>
     </div>
   </nav>
@@ -29,23 +32,21 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-card center-align">
-        <h1 class="white-text">BIENVENIDO A PETCARE</h1>
-        <p class="white-text">Cuidado inteligente para su bienestar real</p>
-        <a href="#about" class="waves-effect btn-large white primary-color-text">SABER MÁS</a>
+        <h1 class="white-text" data-i18n="hero.title">BIENVENIDO A PETCARE</h1>
+        <p class="white-text" data-i18n="hero.subtitle">Cuidado inteligente para su bienestar real</p>
+        <a href="#about" class="waves-effect btn-large white primary-color-text" data-i18n="hero.btn">SABER MÁS</a>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
-        <h3 class="primary-color-text center-align">¿Quiénes somos?</h3>
-        <div class="row valign-wrapper"><div class="col s12 m7">
-          <p class="p-about">Somos PetCare, una plataforma de salud inteligente que une tecnología y bienestar. Nuestra 
-                              prioridad es garantizaruna vida plena para tus mascotas. Redefinimos 
-                              la atención veterinaria para que la salud de tus compañeros nunca sea una incertidumbre, 
-                              sino una garantía.
-          </p>
+        <h3 class="primary-color-text center-align" data-i18n="about.title">¿Quiénes somos?</h3>
+        <div class="row valign-wrapper">
+          <div class="col s12 m7">
+            <p class="p-about" data-i18n="about.description">
+              Somos PetCare, una plataforma de salud inteligente que une tecnología y bienestar. Nuestra prioridad es garantizar una vida plena para tus mascotas. Redefinimos la atención veterinaria para que la salud de tus compañeros nunca sea una incertidumbre, sino una garantía.
+            </p>
           </div>
-
           <div class="col s12 m6 center-align">
             <img class="materialboxed responsive-img" src="./images/perro-en-un-veterinario.jpg" style="border-radius:15px">
           </div>
@@ -55,33 +56,33 @@
 
     <section id="benefits" class="section">
       <div class="container">
-        <h3 class="primary-color-text center-align">Beneficios</h3>
+        <h3 class="primary-color-text center-align" data-i18n="benefits.title">Beneficios</h3>
         <div class="row">
           <div class="col s12 m4">
             <div class="benefit-card card-panel center-align">
               <img class="circle responsive-img" src="./images/agenda.jpg" alt="Agenda">
-              <h4>Horarios personalizados</h4>
-              <p>Localiza las mejores clínicas veterinarias cerca de ti. </p>
-              <p> Filtra por el tipo de atención que busques.</p>
-              <p>Consulta horarios y agenda citas médicas de manera inmediata desde nuestra plataforma.</p>
+              <h4 data-i18n="benefits.card1.title">Horarios personalizados</h4>
+              <p data-i18n="benefits.card1.p1">Localiza las mejores clínicas veterinarias cerca de ti.</p>
+              <p data-i18n="benefits.card1.p2">Filtra por el tipo de atención que busques.</p>
+              <p data-i18n="benefits.card1.p3">Consulta horarios y agenda citas médicas de manera inmediata desde nuestra plataforma.</p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="benefit-card card-panel center-align">
               <img class="circle responsive-img" src="./images/veterinaria-con-perro.jpg" alt="Veterinaria">
-              <h4>Recordatorios y Seguimiento</h4>
-              <p>Nuestro sistema te notificará automáticamente </p>
-              <p>sobre próximas vacunas, desparasitaciones y controles preventivos.</p>
-              <p>Te ayudamos a mantener un cuidado constante para tus compañeros.</p>
+              <h4 data-i18n="benefits.card2.title">Recordatorios y Seguimiento</h4>
+              <p data-i18n="benefits.card2.p1">Nuestro sistema te notificará automáticamente</p>
+              <p data-i18n="benefits.card2.p2">sobre próximas vacunas, desparasitaciones y controles preventivos.</p>
+              <p data-i18n="benefits.card2.p3">Te ayudamos a mantener un cuidado constante para tus compañeros.</p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="benefit-card card-panel center-align">
               <img class="circle responsive-img" src="./images/chica con celular.jpg" alt="Historial">
-              <h4>Historial clínico en línea</h4>
-              <p>Toda la información médica de tu mascota en un solo lugar. </p>
-              <p>No te preocupes por perder documentos médicos.</p>
-              <p>Accede de forma rápida y organizada a registros de vacunas, cirugías y antecedentes.</p>
+              <h4 data-i18n="benefits.card3.title">Historial clínico en línea</h4>
+              <p data-i18n="benefits.card3.p1">Toda la información médica de tu mascota en un solo lugar.</p>
+              <p data-i18n="benefits.card3.p2">No te preocupes por perder documentos médicos.</p>
+              <p data-i18n="benefits.card3.p3">Accede de forma rápida y organizada a registros de vacunas, cirugías y antecedentes.</p>
             </div>
           </div>
         </div>
@@ -90,36 +91,34 @@
 
     <section id="subscription" class="section azul-claro-bg">
       <div class="container">
-        <h3 class="primary-color-text center-align">Suscripciones</h3>
+        <h3 class="primary-color-text center-align" data-i18n="plans.title">Suscripciones</h3>
         <div class="row">
           <div class="col s12 m6">
             <div class="card-panel plan-card center-align">
-              <h4>Plan Premium</h4>
+              <h4 data-i18n="plans.premium.name">Plan Premium</h4>
               <ul class="left-align">
-                <li><i class="material-icons tiny">check</i> Acceso a descuentos</li>
-                <li><i class="material-icons tiny">check</i> Expediente clínico digital</li>
-                <li><i class="material-icons tiny">check</i> Recordatorios de vacunas y citas.</li>
-                <li><i class="material-icons tiny">check</i> Buscador de veterinarias cercanas.</li>
-                <li><i class="material-icons tiny">check</i> Almacenamiento de documentos y placas.</li>
-
-
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.premium.item1">Acceso a descuentos</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.premium.item2">Expediente clínico digital</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.premium.item3">Recordatorios de vacunas y citas.</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.premium.item4">Buscador de veterinarias cercanas.</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.premium.item5">Almacenamiento de documentos y placas.</span></li>
               </ul>
               <h5 class="price">S/ 20.00</h5>
-              <a href="#" class="btn-large waves-effect primary-bg">Elegir Plan</a>
+              <a href="#" class="btn-large waves-effect primary-bg" data-i18n="plans.btn">Elegir Plan</a>
             </div>
           </div>
           <div class="col s12 m6">
             <div class="card-panel plan-card center-align">
-              <h4>Plan Salud</h4>
+              <h4 data-i18n="plans.health.name">Plan Salud</h4>
               <ul class="left-align">
-                <li><i class="material-icons tiny">check</i> Todo lo del Plan Premium.</li>
-                <li><i class="material-icons tiny">check</i> Cobertura de emergencias.</li>
-                <li><i class="material-icons tiny">check</i> Chat de orientación veterinaria.</li>
-                <li><i class="material-icons tiny">check</i> Registro de múltiples mascotas.</li>
-                <li><i class="material-icons tiny">check</i> Descuentos en farmacias veterinarias.</li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.health.item1">Todo lo del Plan Premium.</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.health.item2">Cobertura de emergencias.</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.health.item3">Chat de orientación veterinaria.</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.health.item4">Registro de múltiples mascotas.</span></li>
+                <li><i class="material-icons tiny">check</i> <span data-i18n="plans.health.item5">Descuentos en farmacias veterinarias.</span></li>
               </ul>
               <h5 class="price">S/ 30.00</h5>
-              <a href="#" class="btn-large waves-effect primary-bg">Elegir Plan</a>
+              <a href="#" class="btn-large waves-effect primary-bg" data-i18n="plans.btn">Elegir Plan</a>
             </div>
           </div>
         </div>
@@ -127,45 +126,49 @@
     </section>
 
     <section id="contact-me" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m8 offset-m2">
-          <div class="card-panel primary-bg"> <h4 class="center-align white-text">Sé parte de nosotros</h4>
-            <form>
-              <div class="input-field">
-                <input type="text" id="firstname" class="white-text">
-                <label for="firstname" class="white-text">Nombres</label>
-              </div>
-              <div class="input-field">
-                <input type="text" id="lastname" class="white-text">
-                <label for="lastname" class="white-text">Apellidos</label>
-              </div>
-              <div class="input-field">
-                <input type="email" id="email" class="white-text">
-                <label for="email" class="white-text">Correo</label>
-              </div>
-              <div class="input-field">
-                <input type="number" id="phone" class="white-text">
-                <label for="phone" class="white-text">Teléfono</label>
-              </div>
-              <div class="center-align">
-                 <button type="submit" class="btn-large white black-text waves-effect w100">Registrarme</button>
-              </div>
-            </form>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="card-panel primary-bg"> 
+              <h4 class="center-align white-text" data-i18n="contact.title">Sé parte de nosotros</h4>
+              <form>
+                <div class="input-field">
+                  <input type="text" id="firstname" class="white-text">
+                  <label for="firstname" class="white-text" data-i18n="contact.name">Nombres</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="lastname" class="white-text">
+                  <label for="lastname" class="white-text" data-i18n="contact.lastname">Apellidos</label>
+                </div>
+                <div class="input-field">
+                  <input type="email" id="email" class="white-text">
+                  <label for="email" class="white-text" data-i18n="contact.email">Correo</label>
+                </div>
+                <div class="input-field">
+                  <input type="number" id="phone" class="white-text">
+                  <label for="phone" class="white-text" data-i18n="contact.phone">Teléfono</label>
+                </div>
+                <div class="center-align">
+                   <button type="submit" class="btn-large white black-text waves-effect w100" data-i18n="contact.btn">Registrarme</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 
   <footer class="page-footer primary-bg center-align">
     <div class="container">
-      <p>© PetCare 2026. Todos los derechos reservados.</p>
+      <p data-i18n="footer.text">© PetCare 2026. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>document.addEventListener('DOMContentLoaded', () => M.AutoInit());</script>
+
+  <script src="translations.js"></script>
+
 </body>
 </html>
