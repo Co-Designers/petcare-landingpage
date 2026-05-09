@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@angular/cdk": "^17.3.6",
+    "@angular/material": "^17.3.6",
+    "@material/card": "^14.0.0",
+    "material-components-web": "^14.0.0"
+  }
+}
