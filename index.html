@@ -11,7 +11,6 @@
 </head>
 <body>
 
-
   <nav>
     <div class="nav-wrapper container">
       <a href="#home" class="brand-logo left">
@@ -20,24 +19,25 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#home" data-i18n="nav.home">Inicio</a></li>
         <li><a href="#about" data-i18n="nav.about">Quiénes somos</a></li>
+        <!-- NUEVO ENLACE AL EQUIPO -->
+        <li><a href="#team" data-i18n="nav.team">Equipo</a></li>
         <li><a href="#benefits" data-i18n="nav.benefits">Beneficios</a></li>
         <li><a href="#subscriptions" data-i18n="nav.subscription">Suscripción</a></li>
         <li><a href="#contact-section" data-i18n="nav.contact">Contacto</a></li>
         <li>
-        <a href="https://petcare-frontend.azurewebsites.net/iam/sign-in"
-           class="btn-flat white-text"
+          <a href="https://petcare-frontend.azurewebsites.net/iam/sign-in"
+             class="btn-flat white-text"
              data-i18n="nav.login">
              Iniciar Sesión
-            </a>
-            </li>
-        
-          <li>
-            <a href="https://petcare-frontend.azurewebsites.net/iam/sign-in"
-               class="btn waves-effect waves-light secondary-bg"
-               data-i18n="nav.register">
-               Registrarse
-            </a>
-          </li>
+          </a>
+        </li>
+        <li>
+          <a href="https://petcare-frontend.azurewebsites.net/iam/sign-in"
+             class="btn waves-effect waves-light secondary-bg"
+             data-i18n="nav.register">
+             Registrarse
+          </a>
+        </li>
         <li><a onclick="changeLanguage('es')">ES</a></li>
         <li><a onclick="changeLanguage('en')">EN</a></li>
       </ul>
@@ -45,6 +45,7 @@
   </nav>
 
   <main>
+    <!-- SECCIÓN HERO -->
     <section id="home" class="hero">
       <div class="hero-card center-align">
         <h1 class="white-text" data-i18n="hero.title">BIENVENIDO A PETCARE</h1>
@@ -53,27 +54,73 @@
       </div>
     </section>
 
+    <!-- SECCIÓN QUIÉNES SOMOS -->
     <section id="about" class="section grey lighten-4">
-        <div class="container">
-          <div class="row">
-            <div class="center-align">
-              <h3 class="about-title" data-i18n="about.title">¿Quiénes Somos?</h3>
-            </div>
-          </div>
-
-          <div class="row about-grid">
-            <div class="about-text">
-              <p data-i18n="about.description1">Somos un equipo convencido de que la tecnología debe facilitar el amor que sentimos por nuestras mascotas.</p>
-              <p data-i18n="about.description2">PetCare nació para modernizar el cuidado veterinario, eliminando el desorden de los papeles y la incertidumbre en las emergencias. Nuestra misión es unir a dueños y especialistas en un sistema inteligente.</p>
-              <p data-i18n="about.description3">Queremos que cuidar de tu compañero sea simple, digital y, sobre todo, preventivo.</p>
-            </div>
-            <div class="about-image">
-              <img src="images/perro-en-un-veterinario.jpg" alt="Cuidado PetCare" class="responsive-img">
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="center-align">
+            <h3 class="about-title" data-i18n="about.title">¿Quiénes Somos?</h3>
           </div>
         </div>
+        <div class="row about-grid">
+          <div class="about-text">
+            <p data-i18n="about.description1">Somos un equipo convencido de que la tecnología debe facilitar el amor que sentimos por nuestras mascotas.</p>
+            <p data-i18n="about.description2">PetCare nació para modernizar el cuidado veterinario, eliminando el desorden de los papeles y la incertidumbre en las emergencias. Nuestra misión es unir a dueños y especialistas en un sistema inteligente.</p>
+            <p data-i18n="about.description3">Queremos que cuidar de tu compañero sea simple, digital y, sobre todo, preventivo.</p>
+          </div>
+          <div class="about-image">
+            <img src="images/perro-en-un-veterinario.jpg" alt="Cuidado PetCare" class="responsive-img">
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ✨ NUEVA SECCIÓN: NUESTRO EQUIPO (ABOUT TEAM) ✨ -->
+    <section id="team" class="section white">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <h3 class="about-title" data-i18n="team.title">Conoce a nuestro equipo</h3>
+            <p class="team-subtitle" data-i18n="team.subtitle">Somos Co‑Designers, un grupo de estudiantes apasionados por la tecnología y el bienestar animal.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m10 offset-m1 l8 offset-l2">
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/ZFRj3H87C2U"
+                title="PetCare - About the Team"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p class="video-caption center-align" data-i18n="team.video_caption">
+              Mira nuestro video y descubre quiénes estamos detrás de PetCare.
+            </p>
+          </div>
+        </div>
+
+        <!-- Opcional: tarjetas de integrantes (si quieres añadirlas luego) -->
+        <!--
+        <div class="row team-members">
+          <div class="col s12 m4">
+            <div class="card-panel center-align">
+              <img src="images/miembro1.jpg" alt="Miembro" class="circle responsive-img" style="width:120px;">
+              <h5>Diego Campoblano</h5>
+              <p>Backend Developer</p>
+            </div>
+          </div>
+          ... repetir para cada integrante
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN BENEFICIOS -->
     <section id="benefits" class="section white">
       <div class="container">
         <div class="row">
@@ -82,22 +129,22 @@
           </div>
         </div>
 
-      <div class="row benefits-grid">
-        <div class="col s12 m4">
-          <div class="card-panel benefit-card">
-            <div class="icon-circle orange lighten-5">
-              <i class="material-icons orange-text">restaurant</i>
+        <div class="row benefits-grid">
+          <div class="col s12 m4">
+            <div class="card-panel benefit-card">
+              <div class="icon-circle orange lighten-5">
+                <i class="material-icons orange-text">restaurant</i>
+              </div>
+              <h5 data-i18n="benefits.card1.title">Recomendaciones de salud</h5>
+              <p data-i18n="benefits.card1.p1">Nuestra IA analiza el peso y actividad de tu mascota para recomendar raciones exactas de comida, ayudando a prevenir problemas como el sobrepeso.</p>
             </div>
-            <h5 data-i18n="benefits.card1.title">Recomendaciones de salud</h5>
-            <p data-i18n="benefits.card1.p1">Nuestra IA analiza el peso y actividad de tu mascota para recomendar raciones exactas de comida, ayudando a prevenir problemas como el sobrepeso.</p>
           </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="card-panel benefit-card">
-            <div class="icon-circle red lighten-5">
-              <i class="material-icons red-text">sensors</i>
-            </div>
+          <div class="col s12 m4">
+            <div class="card-panel benefit-card">
+              <div class="icon-circle red lighten-5">
+                <i class="material-icons red-text">sensors</i>
+              </div>
               <h5 data-i18n="benefits.card2.title">Monitoreo en Vivo</h5>
               <p data-i18n="benefits.card2.p1">Detección automática de anomalías biométricas. Recibe alertas en tiempo real si la temperatura o el pulso de tu mascota salen de lo normal, cuidamos la salud de tu mascota de forma preventiva.</p>
             </div>
@@ -115,15 +162,16 @@
         </div>
       </div>
     </section>
-    
+
+    <!-- SECCIÓN SUSCRIPCIONES -->
     <section id="subscriptions" class="section-subscriptions">
       <div class="container">
-        
         <div class="center-align subscriptions-header">
-          <h3 class="about-title" data-i18n="plans.title"> Sucripciones </h3>
+          <h3 class="about-title" data-i18n="plans.title">Suscripciones</h3>
         </div>
 
         <div class="subscriptions-grid">
+          <!-- Plan Esencial -->
           <div class="subscriptions-card">
             <div class="card-content">
               <span class="plan-name" data-i18n="plans.name1">Esencial</span>
@@ -142,6 +190,7 @@
             </div>
           </div>
 
+          <!-- Plan Cuidado Activo -->
           <div class="subscriptions-card featured">
             <div class="card-content">
               <span class="plan-name" data-i18n="plans.name2">Cuidado Activo</span>
@@ -162,6 +211,7 @@
             </div>
           </div>
 
+          <!-- Plan Monitoreo Vital -->
           <div class="subscriptions-card">
             <div class="card-content">
               <span class="plan-name" data-i18n="plans.name3">Monitoreo Vital</span>
@@ -182,12 +232,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-
-
+    <!-- SECCIÓN CONTACTO / REGISTRO -->
     <section id="contact-section" class="section">
       <form>
         <div class="tittle_contact">
@@ -201,24 +249,23 @@
         </div>
 
         <div class="input-group">
-            <label for="last_name" data-i18n="contact.lastname">Apellidos:</label>
-            <input type="text" id="last_name">
+          <label for="last_name" data-i18n="contact.lastname">Apellidos:</label>
+          <input type="text" id="last_name">
         </div>
 
         <div class="input-group">
-            <label for="email" data-i18n="contact.email">Correo electrónico:</label>
-            <input type="email" id="email" oninvalid="this.setCustomValidity(document.documentElement.lang === 'en' ? 'Please include an @ in the email address.' : '')"oninput="this.setCustomValidity('')" required>
+          <label for="email" data-i18n="contact.email">Correo electrónico:</label>
+          <input type="email" id="email" oninvalid="this.setCustomValidity(document.documentElement.lang === 'en' ? 'Please include an @ in the email address.' : '')" oninput="this.setCustomValidity('')" required>
         </div>
 
         <div class="input-group">
-            <label for="cellphone" data-i18n="contact.phone">Celular:</label>
-            <input data-i18n="contact.restriction" type="tel" id="cellphone" pattern="[0-9]{9}" oninvalid="this.setCustomValidity(translations[document.documentElement.lang]['contact.phone_validation'])"oninput="this.setCustomValidity('')">
+          <label for="cellphone" data-i18n="contact.phone">Celular:</label>
+          <input data-i18n="contact.restriction" type="tel" id="cellphone" pattern="[0-9]{9}" oninvalid="this.setCustomValidity(translations[document.documentElement.lang]['contact.phone_validation'])" oninput="this.setCustomValidity('')">
         </div>
 
         <button type="submit" data-i18n="contact.btn">Registrarme</button>
-
-        </form>
-              
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer primary-bg center-align">
@@ -229,8 +276,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>document.addEventListener('DOMContentLoaded', () => M.AutoInit());</script>
-
   <script src="translations.js"></script>
-
 </body>
 </html>
